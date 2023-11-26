@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Ngo Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cadd6fc68c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo"> <!--add logo using "images/logo.png"-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student at UC Irvine</p>
+            <h1>Hi, I'm <span>Alex Ryan Ngo</span><br>From Irvine, CA</h1>
+        </div>
+    </div>
+</div>
+
+<!--------ABOUT-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m a college student with 7+ years of academic experience in STEM disciplines including CAD and Circuitry, 2+ years of proficient programming in Python and Java, 1 year of coding work experience, and a curious mindset that leads to a passion for lifelong learning. Achieved the highest rank in Boy Scouts as an Eagle Scout through leadership initiatives and community service projects. I aspire to become a Software Engineer and am currently seeking a summer internship to learn from tech professionals, contribute to team projects, and apply classroom learning to the real world.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages:</span> Python, Java</li>
+                        <li><span>IDE:</span> Visual Studio Code, Replit</li>
+                        <li><span>Version Control:</span> GitHub</li>
+                        <li><span>CAD:</span> Solidworks, Autodesk Inventor</li>
+                        <li><span>Digital Electronics:</span> Arduino IDE/UNO, Digilent Protoboard</li>
+                        <li><span>MS Office:</span> Word, Excel, PowerPoint</li>
+                        <li><span>Google Workspace:</span> Docs, Sheets, Slides</li>
+                        <li><span>Operating Systems:</span> Windows, MacOS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>NOV 2023 - PRESENT  |  Hack at UCI, Irvine, CA - Corporate Outreach Intern</span><br>Establishing/Strengthening partnerships with 13+ tech companies (Northrop Grumman, Google Cloud, etc.), and local organizations to enhance the experience of UC Irvine's student-run hackathons. Acquiring diverse sponsorships ranging from monetary support, hardware, swag, and mentorship programs. Most recently: ZotHacks Hackathon 2023 (72 hours, 8 sponsors, and 400+ attendees).</li>
+                        <li><span>NOV 2022 - SEPT 2023  |  Code Ninjas, La Habra, CA - Coding Instructor</span><br>Part-time job. Taught/Assisted 72+ students ages 5-14 per shift as thNOey progressed through the various coding languages which consisted of Scratch Jr., Scratch, Javascript, LUA, and C#. Helped debug and grade coding assignments, applied logical teaching methods, and collaborated with parents and fellow instructors to ensure that agreed-upon objectives were achieved.</li>
+                        <li><span>MAR 2016 - SEPT 2023  |  Boy Scouts of America (BSA), Troop 103 - Eagle Rank earned April 2023 (Highest Rank)</span><br>BSA is an organization that promotes character, outdoor activities, and community service. Only 4% achieved the Eagle Rank. Took on extensive leadership roles including my Eagle Scout project where I fundraised and purchased $1200 worth of materials and put together 300+ activity kits for the patients at Children's Hospital of Los Angeles. Led a troop of 20+ scouts on numerous community service projects totaling over 200 hours.</li>
+                        <li><span>JUL 2010 - SEPT 2023  |  Tigers Youth Club (Non-Profit) - Coach/Volunteer</span><br>Player turned dedicated coach/volunteer, imparting basketball skills to over 100+ youths annually for the past 5 years.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>SEPT 2023 - PRESENT  |  University of California Irvine, Irvine, CA - Current GPA: 4.00</span><br>
+                            - Major: Pursuing a BS in Computer Science specializing in Intelligent Systems while also minoring in Statistics with an anticipated graduation date of June 2027.<br>
+                            - Selected out of 400+ applicants to be part of 80 Hackers who competed amongst 20 teams in a 12-hour Hackathon. Coded a Student Hunger Smart Assistant: Given user input of a start and end destination, price range, radius from route, and keywords, our website displays the name, address, and rating of businesses that are relevant and en route. Frontend: JavaScript, HTML, CSS  |  Backend: Python  |  APIs: GoogleMapsAPI, YelpAPI, FastAPI  |  Version Control: GitHub.<br>
+                            - Coding Languages: Python and on track to learn C++, C, SQL, MIPS, Prolog, Lisp, Verilog, and RISC-V.
+                            </li>
+                        <li><span>AUG 2019 - MAY 2023  |  Glen A. Wilson High School, Hacienda Hts, CA - Weighted GPA: 4.54</span><br>
+                            - Teacher’s Assistant for AP Computer Science/ Principles for 35+ students.<br>
+                            - Completed optional 4-year Computer Science Pathway and 4-year Engineering Academy Pathway.<br>
+                            - Created games: Tic-tac-toe, Number Guessing Game, Grocery List Manager, etc. Demonstrated knowledge of 2D Arrays, User Interaction w/ validation, Conditional Statements and Loops, String Manipulation/Formatting, Game Logic, Functions, Data Structures, Recursion, Menu-Driven Interface (Add Remove View Edit and Exit Program).<br>
+                            - Abstract Data Art Project Most Spoken Languages Worldwide (Code.Org): given large datasets I displayed the information in an organized way using visual/audio representations ranging from images, text, tables, and sound files.<br>
+                            - Engineering Capstone Project: Used HTML to prototype and test our Beginner Driver tool. Utilized APIs: OpenStreetMaps, Overpass Turbo, Leaflet. Goal was to inform users of speeding, traffic/navigation information in real-time.<br>
+                            - Student Representative at Wilson Quad STEM night: Led sessions informing parents and students from 5 schools about Wilson’s Computer Science and Engineering pathways offerings. Showcased the curriculum, projects, and answered questions.<br>
+                            - Coding Languages: Java  |  Clubs: Red Cross and Kiwins  |  Athletics: 4-year basketball.
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------PORTFOLIO-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Student Hunger Smart Assistant</h3>
+                    <p>Coded in VS Code (Language: Python) for Hack at UCI ZotHacks2023 Hackathon. Click the link to see a video demonstration.</p>
+                    <a href="https://drive.google.com/file/d/1VYvikH2_WQPt-LYSTLiNrkWyY-zPTIr4/view?usp=sharing" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Tic-tac-toe, Number Guessing Game, Grocery List Manager</h3>
+                    <p>Coded in Replit (Language: Java) for AP Computer Science A. Click the link to play all three for yourself.</p>
+                    <a href="https://replit.com/@ango911s" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Abstract Data Art Project Most Spoken Languages Worldwide</h3>
+                    <p>Coded in Code.org (Language: Java) for AP Computer Science A. Click the link to see a video demonstration.</p>
+                    <a href="https://drive.google.com/file/d/1YpFadDv34JFwH1joD-wZ0GrOc2h_dLKK/view?usp=sharing" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------CONTACT-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> ango911s@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> (626) 433-3582</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_ango10_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alex-ryan-ngo/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg" ></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Alex Ngo</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby67nzm2TiQHfFv33U5yzK5CwJwrZGjB9X0q4E0q3lkQwLm1DzONBG5JTWfNOaCsBOjQA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent. Thank you."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
