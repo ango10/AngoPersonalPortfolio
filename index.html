@@ -145,7 +145,10 @@
             </div>
         </div>
     </div>
-    <a href="#" class="btn" onclick="showMoreWork(event)">See More</a>
+    <div class="button-container">
+        <a href="#" class="btn" onclick="showMoreWork(event)">See More</a>
+        <a href="#" class="btn" onclick="showLessWork(event)" style="display: none;">See Less</a>
+    </div>
 </div>
 
 <!--------CONTACT-------->
@@ -236,14 +239,29 @@
 </script>
 
 <script>
-    function showMoreWork() {
+    function showMoreWork(event) {
         event.preventDefault();
         
         var workContainer = document.getElementById('work-container');
         workContainer.style.display = 'flex';
 
         var seeMoreBtn = document.querySelector('.btn');
+        var seeLessBtn = document.querySelectorAll('.btn')[1];
+
         seeMoreBtn.style.display = 'none';
+        seeLessBtn.style.display = 'inline-block';
+    }
+    function showLessWork(event) {
+        event.preventDefault();
+
+        var workContainer = document.getElementById('work-container');
+        workContainer.style.display = 'none';
+
+        var seeMoreBtn = document.querySelector('.btn');
+        var seeLessBtn = document.querySelectorAll('.btn')[1];
+
+        seeMoreBtn.style.display = 'inline-block';
+        seeLessBtn.style.display = 'none';
     }
 </script>
 
