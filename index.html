@@ -96,7 +96,7 @@
                 <img src="images/work-1.png">
                 <div class="layer">
                     <h3>Student Hunger Smart Assistant</h3>
-                    <p>Coded in VS Code (HTML, CSS, JS, Python, GoogleMapsAPI, YelpAPI, FastAPI) for Hack at UCI ZotHacks2023 Hackathon. Click the link to see a video demonstration.</p>
+                    <p>Coded in VS Code (HTML, CSS, JS, Python, GoogleMapsAPI, YelpAPI, FastAPI) for Hack at UCI ZotHacks2023 Hackathon. Click the link to view a video demonstration.</p>
                     <a href="https://drive.google.com/file/d/1VYvikH2_WQPt-LYSTLiNrkWyY-zPTIr4/view?usp=sharing" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                 <img src="images/work-2.png">
                 <div class="layer">
                     <h3>Tic-tac-toe, Number Guessing Game, Grocery List Manager</h3>
-                    <p>Coded in Replit (Java) for AP Computer Science A. Click the link to play all three for yourself.</p>
+                    <p>Coded in Replit (Java) for AP Computer Science A. Click the link to play all three games for yourself.</p>
                     <a href="https://replit.com/@ango911s" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></i></a>
                 </div>
             </div>
@@ -112,14 +112,42 @@
                 <img src="images/work-3.png">
                 <div class="layer">
                     <h3>Abstract Data Art Project Most Spoken Languages Worldwide</h3>
-                    <p>Coded in Code.org (Java) for AP Computer Science A. Click the link to see a video demonstration.</p>
+                    <p>Coded in Code.org (Java) for AP Computer Science A. Click the link to view a video demonstration.</p>
                     <a href="https://drive.google.com/file/d/1YpFadDv34JFwH1joD-wZ0GrOc2h_dLKK/view?usp=sharing" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">Coming Soon!!!</a>
+    <div id="work-container" style="display: none;">
+        <div class="work-row">
+            <div class="work">
+                <img src="images/photography.png">
+                <div class="layer">
+                    <h3>Photography Portfolio</h3>
+                    <p>Freelance Photographer for 3+ years. Services in automotive, portrait, and event photography. Click the link to check out my work. (Portfolio Coming Soon!)</p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/coming-soon.png">
+                <div class="layer">
+                    <h3>COMING SOON</h3>
+                    <p></p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/coming-soon.png">
+                <div class="layer">
+                    <h3>COMING SOON</h3>
+                    <p></p>
+                    <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
+    <a href="#" class="btn" onclick="showMoreWork(event)">See More</a>
 </div>
+
 <!--------CONTACT-------->
 <div id="contact">
     <div class="container">
@@ -145,7 +173,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Made with <i class="fa-solid fa-heart"></i> by Alex Ngo</p>
+        <p>Made with HTML, CSS, JS, and <i class="fa-regular fa-heart"></i> by Alex Ngo</p>
     </div>
 </div>
 
@@ -205,7 +233,20 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
+
+<script>
+    function showMoreWork() {
+        event.preventDefault();
+        
+        var workContainer = document.getElementById('work-container');
+        workContainer.style.display = 'flex';
+
+        var seeMoreBtn = document.querySelector('.btn');
+        seeMoreBtn.style.display = 'none';
+    }
+</script>
+
 
 </body>
 </html>
