@@ -311,9 +311,11 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/phone-background.png);
+        position: relative;
     }
     .header-text{
-        margin-top: 325px;
+        position: absolute;
+        bottom: 30%;
         font-size: 15px;
     }
     .header-text h1{
