@@ -185,12 +185,18 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycby67nzm2TiQHfFv33U5yzK5CwJwrZGjB9X0q4E0q3lkQwLm1DzONBG5JTWfNOaCsBOjQA/exec'
     const form = document.forms['submit-to-google-sheet']
 
+    const submitBtn = document.querySelector('.btn2');
     const msg = document.getElementById("msg")
   
     form.addEventListener('submit', e => {
       e.preventDefault()
+      submitBtn.style.backgroundColor = '#61b752';
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
+            setTimeout(() => {
+                submitBtn.style.backgroundColor = '#ff004f';
+            }, 5000);
+
             msg.innerHTML = "Message Sent. Thank you."
             setTimeout(function(){
                 msg.innerHTML = ""
